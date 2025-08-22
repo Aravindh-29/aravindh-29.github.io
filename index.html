@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aravindh Kumar Narayana - Resume</title>
-    <style>
-        body { text-align: center; font-family: Arial, sans-serif; margin: 20px; }
-        .container { max-width: 90%; margin: auto; }
-        iframe { width: 100%; height: 85vh; border: none; }
-        .download-link { display: block; margin-top: 10px; font-size: 18px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Download PDF Demo</title>
+  <style>
+    .download-btn {
+      background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+      border: none;
+      color: #333;
+      padding: 12px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(50,150,255,0.15);
+      transition: background 0.3s, color 0.3s;
+    }
+    .download-btn:hover {
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <iframe src="https://docs.google.com/gview?url=https://aravindh-29.github.io/Aravindh_AzureDevOps Engineer.pdf&embedded=true"></iframe>
-        <a class="download-link" href="Aravindh_AzureDevOps Engineer.pdf" download>📄 Click here to download the resume</a>
-    </div>
+  <h1 style="color:#4d79ff;">Force PDF Download Example</h1>
+  <a href="sample.pdf" download="myfile.pdf">
+    <button class="download-btn">Download PDF</button>
+  </a>
 </body>
 </html>
